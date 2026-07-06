@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 app.use(cors({
     origin: [
-        "http://localhost:5173",
+        "https://zerotha-app.onrender.com",
         "https://zerotha-app.vercel.app/"
     ],
     credentials: true
