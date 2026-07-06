@@ -18,7 +18,7 @@ const app = express();
 app.use(bodyParser.json()); 
 
 app.use(cors({
-    origin: "https://zerotha-app.vercel.app",
+    origin: "https://zerotha-app.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
