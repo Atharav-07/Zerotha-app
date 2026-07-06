@@ -19,13 +19,17 @@ app.use(bodyParser.json());
 
 const cors = require("cors");
 
-app.use(cors({
+const cors = require("cors");
+
+app.use(
+  cors({
     origin: [
-        "http://localhost:5173",
-        "https://zerotha-app.vercel.app"
+      "http://localhost:5173",
+      "https://zerotha-app.vercel.app",
     ],
     credentials: true,
-}));
+  })
+);
 
 // methods: ["GET", "POST", "PUT", "DELETE"],
 
