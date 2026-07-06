@@ -17,10 +17,6 @@ const app = express();
 // app.use(cors());  //to Ensure the Secure Connection Between DB and Backend
 app.use(bodyParser.json()); 
 
-const cors = require("cors");
-
-const cors = require("cors");
-
 app.use(
   cors({
     origin: [
@@ -28,6 +24,7 @@ app.use(
       "https://zerotha-app.vercel.app",
     ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 
