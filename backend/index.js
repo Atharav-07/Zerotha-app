@@ -14,11 +14,11 @@ const {OrderModel} = require("./models/OrderModel");
 
 const app = express();
 
-app.use(cors());  //to Ensure the Secure Connection Between DB and Backend
+// app.use(cors());  //to Ensure the Secure Connection Between DB and Backend
 app.use(bodyParser.json()); 
 
 app.use( cors({
-    origin: ["http://localhost:8080"],
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
