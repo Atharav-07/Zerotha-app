@@ -15,7 +15,7 @@ function Home() {
         navigate("/login");
       }
       const { data } = await axios.post(
-        "https://zerotha-app.onrender.com/home",
+        "https://zerotha-app.onrender.com`",
         {},
         { withCredentials: true }
       );
