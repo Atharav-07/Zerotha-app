@@ -17,12 +17,13 @@ const app = express();
 // app.use(cors());  //to Ensure the Secure Connection Between DB and Backend
 app.use(bodyParser.json()); 
 
-app.use( cors({
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+app.use(cors({
+    origin: [
+        "http://localhost:5173",
+        "https://your-frontend.vercel.app"
+    ],
+    credentials: true
+}));
 
 app.use(cookieParser());
 
