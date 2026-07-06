@@ -32,7 +32,7 @@ function Signup() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8080/signup",
+        "https://zerotha-app.onrender.com/signup",
         {
           ...inputValue,
         },
